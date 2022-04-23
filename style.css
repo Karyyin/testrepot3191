@@ -1,0 +1,63 @@
+body{
+	font-family: impact;
+	padding: 0px 20px;
+	background-color: grey;
+}
+header{
+	padding: 40px; 
+	text-align: center;
+	background: black;
+	color: silver;
+}
+
+nav{
+	background: aqua;
+	display: flex;
+}
+
+nav a{
+	color: black;
+	padding: 20px 40px;
+	text-decoration: none;
+	text-align: center;
+}
+
+nav a:hover{
+	background-color: black;
+	color: white;
+}
+
+.main{
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.main .left-panel{
+	background: #2F4F4F;
+	padding: 20px;
+	flex: 30%;
+}
+
+.main .right-panel{
+	background: #708090;
+	padding: 20px;
+	flex: 70%;
+}
+
+footer{
+	padding: 10px; 
+	text-align: center;
+	background: black;
+	color: silver;
+}
+
+.fakeimg{
+	background: silver;
+	margin: 10px;
+}
+
+@media screen and (max-width: 700px){
+	.main, nav{
+		flex-direction: column;
+	}
+}
